@@ -93,10 +93,10 @@ public class TestRSA {
 	} 
 	
 	public static void main(String[] args) throws Exception {
-		generateKey();
+//		generateKey();
 		
 		String text = "zhengchunyun";
-		String publicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCl+96aijYTpUl6UEYvcNdThxrcEYSsI6/Tfd2SXkAlXIK+nvxD84s1CTGT2vZo3ok1rvXobLAbXfSrOyINe9Q2rkHWJBJ9NH0/2ekq7byZBtYDLHKi0aQ3JgOEJXasXcXa936Mfg4AvetfzUoUPB3HPnO9Z6kCAcGtZauUmBOZjQIDAQAB";
+		String publicKey  = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCl+96aijYTpUl6UEYvcNdThxrcEYSsI6/Tfd2SXkAlXIK+nvxD84s1CTGT2vZo3ok1rvXobLAbXfSrOyINe9Q2rkHWJBJ9NH0/2ekq7byZBtYDLHKi0aQ3JgOEJXasXcXa936Mfg4AvetfzUoUPB3HPnO9Z6kCAcGtZauUmBOZjQIDAQAB";
 		String privateKey = "MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAKX73pqKNhOlSXpQRi9w11OHGtwRhKwjr9N93ZJeQCVcgr6e/EPzizUJMZPa9mjeiTWu9ehssBtd9Ks7Ig171DauQdYkEn00fT/Z6SrtvJkG1gMscqLRpDcmA4Qldqxdxdr3fox+DgC961/NShQ8Hcc+c71nqQIBwa1lq5SYE5mNAgMBAAECgYBKdJ84R4NWcLBzM4soQL/2cgZ0bU9MQH3gqvc3bxvrJoJnq72RZbAuTD93CaO7CwgVkrQwXIDq5cyY+t+dmMxqOURPG5GyFgRHWHVPCtHdSQfMF8eYZe6HQiNbGHM3ng/NImRYnbPBR9NC0q8lK9NgPqBh+YeOTtoOLG8ZjjXwwQJBAOC+K4/cebkilPsdBZ8hT9wFNCxyo2PCkBjvnW2BDGkafMR71VsxUbA1CgJubvwDYXc6Ueu43rvAmysmFmQR0+UCQQC9EZ9Cb2cfRZUBsZcnwruDjxZx2iIttlh7JHh+U6L5mm3WWALKoOuhbmsO2dXioDkAU45nft1TntXOxijD+SSJAkEAtUGq8IPoyB/T+BMYDZdYSSMJSS/MBxFMFlBqr358++eY6P7WvI2yTGL6h6t5Z1dyrC4lE/At808L1mkJdfvK4QJAUeuMwdBbMiWIBo/YGpY5gStCYlpNbNkRRWnr+3BpsRTEepbvvrQy5GNfZ7PjBKq/h/CsRxOk+lJb+ZfKmf8dYQJAPGHWxd8gEc8tyKl9NDyc7j3nn5f8UqitQ1JWgNnKvCq7yumVZ3V8aZZuKse0IS57grtCT/h+GVpM2GrL5sj0Zg==";
 	
 		String encryptText = encrypt(text, publicKey);
@@ -106,6 +106,4 @@ public class TestRSA {
 		System.out.println("加密：" + encryptText);
 		System.out.println("解密：" + decryptText);
 	}
-	
-
 }
